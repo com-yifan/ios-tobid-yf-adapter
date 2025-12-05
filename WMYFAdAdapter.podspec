@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { "Erik" => "your-email@example.com" }
 
   # 你的源码位置（通常放在 Git）
-  s.source           = { :git => "git@github.com:com-yifan/ToBid-YF-Adapter.git", :tag => s.version }
+  s.source           = { :git => "git@github.com:com-yifan/ios-tobid-yf-adapter.git", :tag => s.version }
 
   # ⚠️ Podspec 要求 xcframework 必须放在下面结构：
   # WMYFAdAdapter/

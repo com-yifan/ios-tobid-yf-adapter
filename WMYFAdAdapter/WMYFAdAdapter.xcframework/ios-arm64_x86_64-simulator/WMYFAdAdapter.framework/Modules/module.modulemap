@@ -1,0 +1,6 @@
+framework module WMYFAdAdapter {
+  umbrella header "WMYFAdAdapter.h"
+  export *
+
+  module * { export * }
+}

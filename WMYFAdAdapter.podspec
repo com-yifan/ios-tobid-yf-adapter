@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "WMYFAdAdapter"
   s.version          = "4.6.85"
-  s.summary          = "WMYFAdAdapter for YFAdsSDK and ToBid-iOS"
+  s.summary          = "WMYFAdAdapter for ToBid-iOS"
   s.description      = <<-DESC
-  WMYFAdAdapter 提供YF广告适配支持，依赖 YFAdsSDK 和 ToBid-iOS。
+  WMYFAdAdapter 提供YF广告适配支持。
   DESC
 
   s.homepage         = "https://your-homepage.example"

@@ -1,5 +1,4 @@
-# ios-tobid-yf-adapter
-TobidYFAd适配器SDK仓库
+
 对应类名，在ADN设置中配置
 初始化类：WMYFConfigAdapter
 激励视频：WMYFRewardedVideoAdapter

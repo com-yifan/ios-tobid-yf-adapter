@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>alipays</string>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
+		<string>taptap</string>
+		<string>tbopen</string>
+		<string>taobaolite</string>
+		<string>duapp</string>
+		<string>qiyi-iphone</string>
+		<string>baiduboxlite</string>
+		<string>diditaxi</string>
+		<string>snssdk2329</string>
+		<string>douyutv</string>
+		<string>eleme</string>
+		<string>openApp.jdMobile</string>
+		<string>openjdjrapp</string>
+		<string>quark</string>
+		<string>kwai</string>
+		<string>ksnebula</string>
+		<string>iMeituan</string>
+		<string>pinduoduo</string>
+		<string>tmallopen</string>
+		<string>sinaweibo</string>
+		<string>VSSpecialSwitch</string>
+		<string>fleamarket</string>
+		<string>youku</string>
+		<string>zhihu</string>
+		<string>ucbrowser</string>
+		<string>autohome</string>
+		<string>taobaolive</string>
+		<string>dangdang</string>
+		<string>sky20170605</string>
+		<string>douyuapp</string>
+		<string>yymobile</string>
+		<string>meituanwaimai</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

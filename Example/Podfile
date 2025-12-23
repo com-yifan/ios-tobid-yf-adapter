@@ -1,0 +1,87 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def commonPods
+  pod 'ReactiveObjC'
+  pod 'MJExtension', '3.2.2'
+  pod 'Toast', '~> 4.0.0'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'XLForm', '~> 4.3'
+  pod 'CocoaLumberjack'
+  pod 'Masonry'
+  pod 'Bugly'
+  pod 'MJRefresh', '3.7.2'
+  pod 'SDWebImage', '5.12.1'
+  # ToBid亿帆适配器
+  pod 'WMYFAdAdapter'
+  # 亿帆SDK【必须】
+  pod 'YFAdsSDK/YFAdsSDK', '6.0.8.1'
+
+  #  百度【可选】
+  pod 'YFAdsSDK/YFAdsBDAdapter'
+  pod 'BaiduMobAdSDK','10.022'
+
+  # 优量汇【可选】
+  pod 'YFAdsSDK/YFAdsGDTAdapter'
+  pod 'GDTMobSDK' ,'4.15.65'
+
+  # 京东【可选】
+  pod 'YFAdsSDK/YFAdsJDAdapter'
+  pod 'JADYun', '2.6.8'
+  pod 'JADYunMotion', '2.6.8'  #京东摇一摇组件
+
+  # 穿山甲【可选】
+  pod 'YFAdsSDK/YFAdsCSJAdapter'
+  # Gromore【可选】
+#  pod 'YFAdsSDK/YFAdsGROAdapter'
+  # 穿山甲【必须】⚠️注意：旧版本有 按照2.3-1方式集成 的，需要去掉 TTSDKFramework
+#  pod 'Ads-CN', '7.2.0.9', :subspecs => ['BUAdSDK','CSJMediation','BUAdLive-Framework']
+  # Gromore-Adn适配器
+#  pod 'GMBaiduAdapter', '10.02.1'
+#  pod 'GMGdtAdapter', '4.15.60.0'
+#  pod 'GMKsAdapter', '4.9.20.1.2'
+
+  #  快手【可选】
+  pod 'YFAdsSDK/YFAdsKSAdapter'
+  pod 'KSAdSDK','4.11.30.1'
+  
+end
+
+
+target 'WindmillSample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #  use_frameworks!
+  
+  
+  # Pods for WindmillSample
+  commonPods
+  pod 'ToBid-iOS', '4.6.85', :subspecs => [
+      'TouTiaoAdapter',
+#      'AdmobAdapter',
+#      'AppLovinAdapter',
+#      'MintegralAdapter',
+#      'GDTAdapter',
+#      'IronSourceAdapter',
+#      'VungleAdapter',
+#      'UnityAdsAdapter',
+#      'KSAdapter',
+#      'BaiduAdapter',
+#      'KlevinAdapter',
+  ]
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['CODE_SIGN_IDENTITY'] = ''
+         end
+    end
+  end
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+end

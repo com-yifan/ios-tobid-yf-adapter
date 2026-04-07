@@ -4,13 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/WindMillCSJAdapter.framework/Info.plist</key>
+		<data>
+		hVaCbaPZHsRTFkzwxEV7QEVPHqI=
+		</data>
+		<key>Frameworks/WindMillCSJAdapter.framework/WindMillCSJAdapter</key>
+		<data>
+		Uc5gVXIIGXUWO+R+yB6YlHqcBJ0=
+		</data>
+		<key>Frameworks/WindMillCSJAdapter.framework/_CodeSignature/CodeResources</key>
+		<data>
+		1+b97Bku5qF9Nyi702hhRksBOCU=
+		</data>
 		<key>Headers/WMYFAdAdapter.h</key>
 		<data>
-		8FZCdqMO1293Rng2dOqBv2E2P+Q=
+		MaCr0LlxxCI+pwaU41kOWb9V0LM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		onmPi3TXINulCxilgsDwM7P+N8Y=
+		fTHhv1cwmNAK64SzHANHp/7dioE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -19,15 +31,48 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/WindMillCSJAdapter.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hVaCbaPZHsRTFkzwxEV7QEVPHqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			AW+WwVA4uq9f1kEmRNL+I0grNLx2QyyhpveMKfdUX/o=
+			</data>
+		</dict>
+		<key>Frameworks/WindMillCSJAdapter.framework/WindMillCSJAdapter</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Uc5gVXIIGXUWO+R+yB6YlHqcBJ0=
+			</data>
+			<key>hash2</key>
+			<data>
+			hdxSaFTmTnixo1lcRFwfPiFltNnDASCesKAgC0mdyMU=
+			</data>
+		</dict>
+		<key>Frameworks/WindMillCSJAdapter.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1+b97Bku5qF9Nyi702hhRksBOCU=
+			</data>
+			<key>hash2</key>
+			<data>
+			GkwwbLdUuPIq+e/O9DZ5MhEONOszG6LL3sS1L/ao9SU=
+			</data>
+		</dict>
 		<key>Headers/WMYFAdAdapter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8FZCdqMO1293Rng2dOqBv2E2P+Q=
+			MaCr0LlxxCI+pwaU41kOWb9V0LM=
 			</data>
 			<key>hash2</key>
 			<data>
-			sOs5Oejd8xpYrtXrYxpOdmXzGkwIavaSUy55lboVwHk=
+			xiM8W4Ar1XgwUUW1lKu77Fm6TYJy051Uf09RE3YOpug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

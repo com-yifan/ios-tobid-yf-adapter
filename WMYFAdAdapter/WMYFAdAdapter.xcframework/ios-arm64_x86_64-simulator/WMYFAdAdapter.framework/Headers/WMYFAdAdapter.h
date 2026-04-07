@@ -2,7 +2,7 @@
 //  WMYFAdAdapter.h
 //  WMYFAdAdapter
 //
-//  Created by Erik on 2025/12/5.
+//  Created by Erik on 2026/4/3.
 //
 
 #import <Foundation/Foundation.h>

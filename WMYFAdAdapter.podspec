@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WMYFAdAdapter"
-  s.version          = "4.6.85"
+  s.version          = "5.3.2"
   s.summary          = "WMYFAdAdapter for ToBid-iOS"
   s.description      = <<-DESC
   WMYFAdAdapter 提供YF广告适配支持。

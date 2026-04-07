@@ -1,0 +1,59 @@
+platform :ios, '13.0'
+ 
+
+def commonPods
+  pod 'MJExtension', '3.2.2'
+  pod 'Toast', '~> 4.0.0'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'XLForm', '~> 4.3'
+  pod 'CocoaLumberjack'
+  pod 'Masonry'
+  pod 'MJRefresh', '3.7.2'
+  pod 'SDWebImage', '5.12.1'
+end
+
+target 'Demo_OC' do
+  use_frameworks!
+  # Pods for Demo_OC
+  commonPods
+pod 'WMYFAdAdapter','5.3.2'
+  # 亿帆SDK【必须】
+pod 'YFAdsSDK', '6.1.0.0'
+#  百度【必须】
+pod 'BaiduMobAdSDK','10.032'
+# 优量汇【必须】
+pod 'GDTMobSDK' ,'4.15.75'
+# 京东【必须】
+pod 'JADYun', '2.6.8'
+pod 'JADYunMotion', '2.6.8'  #京东摇一摇组件
+# 穿山甲【必须】⚠️注意：旧版本有 按照2.3-1方式集成 的，需要去掉 TTSDKFramework
+pod 'Ads-CN', '7.4.0.4', :subspecs => ['BUAdSDK','CSJMediation','BUAdLive-Framework']
+# Gromore-Adn适配器
+pod 'GMBaiduAdapter', '10.02.1'
+pod 'GMGdtAdapter', '4.15.65.0'
+pod 'GMKsAdapter', '4.11.20.1.0'
+# 快手【必须】
+pod 'KSAdSDK','5.1.20.1'
+# 微信OpenSDK【必须】，如App内已通过其他方式集成OpenSDK，无需再次集成
+pod 'WechatOpenSDK-XCFramework'
+  pod 'ToBid-iOS-RC', '5.3.4', :subspecs => [
+    'BidResultAdapter',
+    'CSJAdapter',
+]
+  
+
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['CODE_SIGN_IDENTITY'] = ''
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+         end
+    end
+  end
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+end

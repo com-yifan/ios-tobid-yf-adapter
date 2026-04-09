@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WMYFAdAdapter"
-  s.version          = "5.3.2"
+  s.version          = "5.3.3"
   s.summary          = "WMYFAdAdapter for ToBid-iOS"
   s.description      = <<-DESC
   WMYFAdAdapter 提供YF广告适配支持。
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { "Erik" => "your-email@example.com" }
 
   # 你的源码位置（通常放在 Git）
-  s.source           = { :git => "git@github.com:com-yifan/ios-tobid-yf-adapter.git", :tag => s.version }
+  s.source           = { :git => "https://github.com/com-yifan/ios-tobid-yf-adapter.git", :tag => s.version }
 
   # ⚠️ Podspec 要求 xcframework 必须放在下面结构：
   # WMYFAdAdapter/
